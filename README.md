@@ -10,3 +10,11 @@ automation of synthesis and static timing analysis using tcl
 ![image](https://github.com/user-attachments/assets/8ea629cf-343b-4ffa-98eb-5e479658aa72)
 
 - this script checks if the argument is help or csv file as input and executes accordingly
+
+### no input provided with bash script
+
+![image](https://github.com/user-attachments/assets/ca46108d-f330-4856-b6f1-e99c1d771ffb)
+
+### help command with bash script
+
+![image](https://github.com/user-attachments/assets/8a0cd819-bbbe-4840-a4bf-22321653e96c)
