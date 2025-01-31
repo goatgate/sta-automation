@@ -1,0 +1,40 @@
+# initialization
+
+if [ $# -eq 0 ]; then
+    echo "Info: Please provide the .csv file"
+    exit 1
+elif [ $# -gt 1 ] && [ "$1" != *.csv ]; then
+    echo "Info: Please provide only one .csv file"
+    exit 1
+elif [ "$1" != *.csv ] && [ "$1" != "-help" ]; then
+    echo "Info: Please provide a .csv file"
+    exit 1
+fi
+
+# checking if the files exits
+if [ -e "$1" ] || [ "$1" == "-help" ]; then
+	if [ $1 != "-help" ]; then
+		echo "Error: Cannot find csv file $1. Exiting..."
+		exit 1
+	else
+	echo "Starting procedure: ./synstaauto <csv file>"
+	echo
+	echo "csv file consists of 2 colums with keywords being case sensitive"
+	echo
+	echo "<Design name> is the name of the top module"
+	echo
+	echo "<Output Directory> is where the dump synthesis script,synthesis and timing reports are dumped"
+	echo
+	echo "Netlist Directory" is where the netlist is dumped"
+	echo 
+	echo "<Early Library Path> is the early cell library used for sta"
+	echo 
+	echo "<Late Library Path> is the late cell library used for sta"
+	echo 
+	echo "<Constraints file> is the csv file path consisting the csv file with constraints to be used for STA"
+	echo
+	fi
+else
+	echo "Info: "$1" csv file accepted"
+	tclsh synstaauto.tcl "$1"
+fi
