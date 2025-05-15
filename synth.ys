@@ -1,0 +1,37 @@
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/omsp_alu.v
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/omsp_and_gate.v
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/omsp_clock_gate.v
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/omsp_clock_module.v
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/omsp_clock_mux.v
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/omsp_dbg.v
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/omsp_dbg_hwbrk.v
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/omsp_dbg_i2c.v
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/omsp_dbg_uart.v
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/omsp_execution_unit.v
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/omsp_frontend.v
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/omsp_mem_backbone.v
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/omsp_multiplier.v
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/omsp_register_file.v
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/omsp_scan_mux.v
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/omsp_sfr.v
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/omsp_sync_cell.v
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/omsp_sync_reset.v
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/omsp_wakeup_cell.v
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/omsp_watchdog.v
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/openMSP430.v
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/openMSP430_defines.v
+read_verilog /Users/sriramnimmala/sta-analysis/sta-automation/src/verilog/openMSP430_undefines.v
+hierarchy -top openMSP430
+synth -top openMSP430
+splitnets -ports -format ___
+tribuf
+techmap
+proc; opt;
+dfflibmap -prepare -liberty /Users/sriramnimmala/sta-analysis/sta-automation/src/osu018_stdcells.lib
+abc -liberty /Users/sriramnimmala/sta-analysis/sta-automation/src/osu018_stdcells.lib
+dfflibmap -liberty /Users/sriramnimmala/sta-analysis/sta-automation/src/osu018_stdcells.lib
+stat -liberty /Users/sriramnimmala/sta-analysis/sta-automation/src/osu018_stdcells.lib
+flatten
+clean
+tee -o report.txt stat -liberty /Users/sriramnimmala/sta-analysis/sta-automation/src/osu018_stdcells.lib
+write_verilog -noattr openMSP430_mapped.v

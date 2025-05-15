@@ -1,0 +1,10 @@
+{
+      "Design Name": "openMSP430",
+      "Output Directory": "/Users/sriramnimmala/sta-analysis/sta-automation/src/output",
+      "Source Directory": "/Users/sriramnimmala/sta-analysis/sta-automation/src/verilog",  
+      "Early Library Path": "/Users/sriramnimmala/sta-analysis/sta-automation/src/osu018_stdcells.lib",    
+      "Late Library Path": "/Users/sriramnimmala/sta-analysis/sta-automation/src/osu018_stdcells.lib",
+      "Clock Constraints File": "clock_constraints.json",
+      "Input Constraints File": "input_constraints.json",
+      "Output Constraints File": "output_constraints.json"
+}

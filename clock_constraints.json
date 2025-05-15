@@ -1,0 +1,30 @@
+{
+    "clocks":[
+    {
+    "CLOCK": "dco_clk",
+    "frequency":"1500",
+    "duty_cycle":"50",
+    "early_rise_delay":"150",
+    "early_fall_delay":"151",
+    "late_rise_delay":"152",
+    "late_fall_delay":"153",
+    "early_rise_slew":"154",
+    "early_fall_slew":"155",
+    "late_rise_slew":"156",
+    "late_fall_slew":"157"
+},
+{  
+    "CLOCK": "lfxt_clk",
+    "frequency":"1600",
+    "duty_cycle":"60",
+    "early_rise_delay":"151",
+    "early_fall_delay":"152",
+    "late_rise_delay":"153",
+    "late_fall_delay":"154",
+    "early_rise_slew":"155",
+    "early_fall_slew":"156",
+    "late_rise_slew":"157",
+    "late_fall_slew":"158"
+}
+]
+}

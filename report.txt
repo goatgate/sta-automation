@@ -1,0 +1,37 @@
+
+36. Printing statistics.
+
+=== openMSP430 ===
+
+   Number of wires:              10898
+   Number of wire bits:          10898
+   Number of public wires:        4638
+   Number of public wire bits:    4638
+   Number of ports:                267
+   Number of port bits:            267
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               7400
+     $scopeinfo                     16
+     AND2X1                        200
+     AOI21X1                       421
+     AOI22X1                       558
+     DFFSR                         654
+     INVX1                        1409
+     MUX2X1                        267
+     NAND2X1                       972
+     NAND3X1                       262
+     NOR2X1                        638
+     NOR3X1                         69
+     OAI21X1                      1209
+     OAI22X1                       102
+     OR2X1                         173
+     XNOR2X1                       300
+     XOR2X1                        150
+
+   Area for cell type $scopeinfo is unknown!
+
+   Chip area for module '\openMSP430': 307767.000000
+     of which used for sequential elements: 115104.000000 (37.40%)
+

@@ -1,0 +1,265 @@
+{
+    "outputs": [
+      {
+        "pin": "aclk",
+        "early_rise_delay": 100,
+        "early_fall_delay": 101,
+        "late_rise_delay": 102,
+        "late_fall_delay": 103,
+        "clocks": "yet_to_decide22",
+        "load": 10
+      },
+      {
+        "pin": "aclk_en",
+        "early_rise_delay": 101,
+        "early_fall_delay": 102,
+        "late_rise_delay": 103,
+        "late_fall_delay": 104,
+        "clocks": "yet_to_decide23",
+        "load": 11
+      },
+      {
+        "pin": "dbg_freeze",
+        "early_rise_delay": 102,
+        "early_fall_delay": 103,
+        "late_rise_delay": 104,
+        "late_fall_delay": 105,
+        "clocks": "yet_to_decide24",
+        "load": 12
+      },
+      {
+        "pin": "dbg_i2c_sda_out",
+        "early_rise_delay": 103,
+        "early_fall_delay": 104,
+        "late_rise_delay": 105,
+        "late_fall_delay": 106,
+        "clocks": "yet_to_decide25",
+        "load": 13
+      },
+      {
+        "pin": "dbg_uart_txd",
+        "early_rise_delay": 104,
+        "early_fall_delay": 105,
+        "late_rise_delay": 106,
+        "late_fall_delay": 107,
+        "clocks": "yet_to_decide26",
+        "load": 14
+      },
+      {
+        "pin": "dco_enable",
+        "early_rise_delay": 105,
+        "early_fall_delay": 106,
+        "late_rise_delay": 107,
+        "late_fall_delay": 108,
+        "clocks": "yet_to_decide27",
+        "load": 15
+      },
+      {
+        "pin": "dco_wkup",
+        "early_rise_delay": 106,
+        "early_fall_delay": 107,
+        "late_rise_delay": 108,
+        "late_fall_delay": 109,
+        "clocks": "yet_to_decide28",
+        "load": 16
+      },
+      {
+        "pin": "dmem_addr",
+        "early_rise_delay": 107,
+        "early_fall_delay": 108,
+        "late_rise_delay": 109,
+        "late_fall_delay": 110,
+        "clocks": "yet_to_decide29",
+        "load": 17
+      },
+      {
+        "pin": "dmem_cen",
+        "early_rise_delay": 108,
+        "early_fall_delay": 109,
+        "late_rise_delay": 110,
+        "late_fall_delay": 111,
+        "clocks": "yet_to_decide30",
+        "load": 18
+      },
+      {
+        "pin": "dmem_din",
+        "early_rise_delay": 109,
+        "early_fall_delay": 110,
+        "late_rise_delay": 111,
+        "late_fall_delay": 112,
+        "clocks": "yet_to_decide31",
+        "load": 19
+      },
+      {
+        "pin": "dmem_wen",
+        "early_rise_delay": 110,
+        "early_fall_delay": 111,
+        "late_rise_delay": 112,
+        "late_fall_delay": 113,
+        "clocks": "yet_to_decide32",
+        "load": 20
+      },
+      {
+        "pin": "irq_acc",
+        "early_rise_delay": 111,
+        "early_fall_delay": 112,
+        "late_rise_delay": 113,
+        "late_fall_delay": 114,
+        "clocks": "yet_to_decide33",
+        "load": 21
+      },
+      {
+        "pin": "lfxt_enable",
+        "early_rise_delay": 112,
+        "early_fall_delay": 113,
+        "late_rise_delay": 114,
+        "late_fall_delay": 115,
+        "clocks": "yet_to_decide34",
+        "load": 22
+      },
+      {
+        "pin": "lfxt_wkup",
+        "early_rise_delay": 113,
+        "early_fall_delay": 114,
+        "late_rise_delay": 115,
+        "late_fall_delay": 116,
+        "clocks": "yet_to_decide35",
+        "load": 23
+      },
+      {
+        "pin": "mclk",
+        "early_rise_delay": 114,
+        "early_fall_delay": 115,
+        "late_rise_delay": 116,
+        "late_fall_delay": 117,
+        "clocks": "yet_to_decide36",
+        "load": 24
+      },
+      {
+        "pin": "dma_dout",
+        "early_rise_delay": 115,
+        "early_fall_delay": 116,
+        "late_rise_delay": 117,
+        "late_fall_delay": 118,
+        "clocks": "yet_to_decide37",
+        "load": 25
+      },
+      {
+        "pin": "dma_ready",
+        "early_rise_delay": 116,
+        "early_fall_delay": 117,
+        "late_rise_delay": 118,
+        "late_fall_delay": 119,
+        "clocks": "yet_to_decide38",
+        "load": 26
+      },
+      {
+        "pin": "dma_resp",
+        "early_rise_delay": 117,
+        "early_fall_delay": 118,
+        "late_rise_delay": 119,
+        "late_fall_delay": 120,
+        "clocks": "yet_to_decide39",
+        "load": 27
+      },
+      {
+        "pin": "per_addr",
+        "early_rise_delay": 118,
+        "early_fall_delay": 119,
+        "late_rise_delay": 120,
+        "late_fall_delay": 121,
+        "clocks": "yet_to_decide40",
+        "load": 28
+      },
+      {
+        "pin": "per_din",
+        "early_rise_delay": 119,
+        "early_fall_delay": 120,
+        "late_rise_delay": 121,
+        "late_fall_delay": 122,
+        "clocks": "yet_to_decide41",
+        "load": 29
+      },
+      {
+        "pin": "per_en",
+        "early_rise_delay": 120,
+        "early_fall_delay": 121,
+        "late_rise_delay": 122,
+        "late_fall_delay": 123,
+        "clocks": "yet_to_decide42",
+        "load": 30
+      },
+      {
+        "pin": "per_we",
+        "early_rise_delay": 121,
+        "early_fall_delay": 122,
+        "late_rise_delay": 123,
+        "late_fall_delay": 124,
+        "clocks": "yet_to_decide43",
+        "load": 31
+      },
+      {
+        "pin": "pmem_addr",
+        "early_rise_delay": 122,
+        "early_fall_delay": 123,
+        "late_rise_delay": 124,
+        "late_fall_delay": 125,
+        "clocks": "yet_to_decide44",
+        "load": 32
+      },
+      {
+        "pin": "pmem_cen",
+        "early_rise_delay": 123,
+        "early_fall_delay": 124,
+        "late_rise_delay": 125,
+        "late_fall_delay": 126,
+        "clocks": "yet_to_decide45",
+        "load": 33
+      },
+      {
+        "pin": "pmem_din",
+        "early_rise_delay": 124,
+        "early_fall_delay": 125,
+        "late_rise_delay": 126,
+        "late_fall_delay": 127,
+        "clocks": "yet_to_decide46",
+        "load": 34
+      },
+      {
+        "pin": "pmem_wen",
+        "early_rise_delay": 125,
+        "early_fall_delay": 126,
+        "late_rise_delay": 127,
+        "late_fall_delay": 128,
+        "clocks": "yet_to_decide47",
+        "load": 35
+      },
+      {
+        "pin": "puc_rst",
+        "early_rise_delay": 126,
+        "early_fall_delay": 127,
+        "late_rise_delay": 128,
+        "late_fall_delay": 129,
+        "clocks": "yet_to_decide48",
+        "load": 36
+      },
+      {
+        "pin": "smclk",
+        "early_rise_delay": 127,
+        "early_fall_delay": 128,
+        "late_rise_delay": 129,
+        "late_fall_delay": 130,
+        "clocks": "yet_to_decide49",
+        "load": 37
+      },
+      {
+        "pin": "smclk_en",
+        "early_rise_delay": 128,
+        "early_fall_delay": 129,
+        "late_rise_delay": 130,
+        "late_fall_delay": 131,
+        "clocks": "yet_to_decide50",
+        "load": 38
+      }
+    ]
+  }
